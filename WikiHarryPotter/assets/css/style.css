@@ -1,45 +1,115 @@
 body, html {
     margin: 0;
     padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
 }
-ul { list-style: none; padding-left: 5px; }
-
-a { color:blue; text-decoration: none;}
 
 .header {
-    
-    align-items: center;
+    display: block;
+    text-align: center;
+}
 
+.logo {
+    background-image: url(../images/WikiHarryPotterGif1.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.logo img {
+    max-width: 100%;
+    max-height: 100%;
+    width: 400px;
+    height: auto;
 }
 
 .bar {
-    background-color: #f9f9fb;
-    border-top: solid 1px #cdcdcd;
-    border-bottom: solid 1px #cdcdcd;
+    border: solid 1px #0000ff;
 }
+
 .content {
     max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
     margin: auto;
-    grid-gap: 30%;
     display: grid;
-    gap: 30%;
     grid-template-areas: "sidebar main anchors";
-    grid-template-columns: minmax(0, 25%) minmax(0,50%) minmax(0,25%);
-    padding-left: 5%;
-    padding-right: 5%;
+    grid-template-columns: minmax(0, 18%) minmax(0,67%) minmax(0,15%);
 }
-.footer {
-    min-height: 100px;
-    border-top: solid 1px #cdcdcd;
+
+.main {
+    font-size: 120%;
+    text-align: justify;
+    padding-left: 2%;
+    padding-right: 2%;
 }
+
+.figure1 img {
+    width: 20%;
+    float: right; /*Deixa a imagem flutuando para que o texto fique em volta*/
+    margin-top: 5%;
+}
+
+.figure2 img{
+    max-width: 100%;
+    width: 40%;
+    margin-bottom: 3%;
+    float: none;
+    padding-left: 35%;
+}
+
+.main ul {
+    text-align: justify;
+    padding-top: 1%;
+    margin-right: 5%;
+}
+
 .anchors {
-    border-left: solid 1px #cdcdcd;
+    border-left: solid 3px #ffff00;
     padding-left: 15px;
 }
+
 .sidebar {
-    border-right: solid 1px #cdcdcd;
+    border-right: solid 3px #c51616;
 }
-figure {
+
+a { 
+    color:blue; 
+    text-decoration: none;
+    user-select: none; 
+    cursor: pointer;
+}
+
+a:hover {
+    color: #16c54b;
+}
+
+.sidebar h2{
     text-align: center;
+}
+
+.sidebar ul {
+    text-align: center;
+    list-style: none; /*deixa sem as bolinhas pretas*/
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.anchors ul {
+    text-align: center;
+    list-style: none; /*deixa sem as bolinhas pretas*/
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.footer {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    padding: 2%;
+    border-top: solid 3px #16c516;
+    background-color: #636363;
+    color: #ffffff;
 }
