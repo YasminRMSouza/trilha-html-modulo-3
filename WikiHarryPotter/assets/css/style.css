@@ -1,6 +1,7 @@
 body, html {
     margin: 0;
     padding: 0;
+    text-align: justify;
     font-family: 'Times New Roman', Times, serif;
 }
 
@@ -10,7 +11,7 @@ body, html {
 }
 
 .logo {
-    background-image: url(../images/WikiHarryPotterGif1.gif);
+    background-image: url(../images/WikiHarryPotterGif3.gif);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
@@ -35,43 +36,23 @@ body, html {
     margin: auto;
     display: grid;
     grid-template-areas: "sidebar main anchors";
-    grid-template-columns: minmax(0, 18%) minmax(0,67%) minmax(0,15%);
+    grid-template-columns: minmax(0, 18%) minmax(0,64%) minmax(0,18%);
 }
 
-.main {
-    font-size: 120%;
-    text-align: justify;
-    padding-left: 2%;
-    padding-right: 2%;
-}
-
-.figure1 img {
-    width: 20%;
-    float: right; /*Deixa a imagem flutuando para que o texto fique em volta*/
-    margin-top: 5%;
-}
-
-.figure2 img{
-    max-width: 100%;
-    width: 40%;
-    margin-bottom: 3%;
-    float: none;
-    padding-left: 35%;
-}
-
-.main ul {
-    text-align: justify;
-    padding-top: 1%;
-    margin-right: 5%;
-}
-
-.anchors {
-    border-left: solid 3px #ffff00;
-    padding-left: 15px;
-}
-
-.sidebar {
+.sidenav {
+    background-color: #ffeded;
     border-right: solid 3px #c51616;
+}
+
+.sidenav h2{
+    text-align: center;
+}
+
+.sidenav ul {
+    text-align: center;
+    list-style: none; /*deixa sem as bolinhas pretas*/
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 a { 
@@ -85,22 +66,51 @@ a:hover {
     color: #16c54b;
 }
 
-.sidebar h2{
-    text-align: center;
+.main {
+    font-size: 120%;
+    text-align: justify;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
-.sidebar ul {
-    text-align: center;
-    list-style: none; /*deixa sem as bolinhas pretas*/
-    padding-left: 10%;
-    padding-right: 10%;
+.figure1 img {
+    width: 20%;
+    float: right; /*Deixa a imagem flutuando para que o texto fique em volta*/
+    margin-top: 5%;
+}
+
+.figure2 img{
+    max-width: 100%;
+    width: 30%;
+    margin-bottom: 3%;
+    float: none;
+    padding-left: 35%;
+}
+
+.figure3 img{
+    max-width: 100%;
+    width: 60%;
+    margin-bottom: 3%;
+    float: none;
+    padding-left: 18%;
+}
+
+.main ul {
+    text-align: justify;
+    padding-top: 1%;
+}
+
+.anchors {
+    background-color: #ffffe7;
+    border-left: solid 3px #ffff00;
+    padding-left: 20px;
 }
 
 .anchors ul {
     text-align: center;
     list-style: none; /*deixa sem as bolinhas pretas*/
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .footer {
@@ -108,8 +118,8 @@ a:hover {
     max-height: 100%;
     width: auto;
     height: auto;
-    padding: 2%;
+    padding: 1%;
     border-top: solid 3px #16c516;
-    background-color: #636363;
-    color: #ffffff;
+    background-color: #eaffee;
+    color: #000000;
 }
